@@ -3,36 +3,155 @@
   <head>
     <meta charset="UTF-8">
     <title>Event Joiner</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
-    <link rel='stylesheet prefetch' href='http://alvarotrigo.com/pagePiling/jquery.pagepiling.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="section u-color-white" style="background-color:#000">
-  <div class="awesome content">
-    <h1 class="awesome title">
-      event joiner
-    </h1>
-    <h3 class="incredible subtitle">comming soon</h3>
-    <br />
-    <button class="hilarious button u-color-white" onclick="$.fn.pagepiling.moveSectionDown();">KNOW MORE</button>
+
+    <header>
+  <div class='text'>
+    <h1>Event Joiner</h1>
+    <br>
+    <h2>Event Job Match Up System</h2>
   </div>
+</header>
+<nav>
+  <ul>
+    <li>
+      <a href='#'>
+        <i class="fa fa-home fa-2x"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a href='http://eventjoiner.io/host/login/index.html'>
+        <i class="fa fa-calendar fa-2x"></i>
+        Event Organizer
+      </a>
+    </li>
+    <li>
+      <a href='#'>
+        <i class="fa fa-apple fa-2x"></i>
+        iOS
+      </a>
+    </li>
+    <li>
+      <a href='#'>
+        <i class="fa fa-android fa-2x"></i>
+        Android
+      </a>
+    </li>
+    <li>
+      <a href='#event'>
+        <i class="fa fa-cutlery fa-2x"></i>
+        Event
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class='container'>
+  <section class='one'>
+    <h1>How does EventJoiner works?</h1>
+    <p>EventJoiner is matching up system for any event job. 
+    When an event organizer wants to organize an event and people wants to join the event work, 
+    this will comes in your needs. In event organizer side, they have the web system which the organizer can create an event and schedule whereas joiners can fill them in the schedule events.
+    </p>
+    <p>This app is free to use. 
+    So if user wants to find a event job, you can download either iOS app or Android app to check the schedule. Once joiner applies the event and approved by the organizer, 
+    you just pop up in the event, do your task and get paid.
+    </p>
+    <h1>Register as an Host of EventJoiner!!</h1>
+    <p>We are still looking for an event organizer side who wants to publish the temporary event task and schedule.
+      <br>For more information click <a href="satoshiho2012@gmail.com">here</a></p>
+    <h1>Registered Employers</h1>
+    <p>We have two excellent event organizer, which you can register yourself as temporary employees. </p>
+    <h2>Hotel A</h2>
+    <p class='indent'>
+      Located within walking distance to Botanic Gardens and Orchard Road, Regent Singapore is an oasis of calm, offering guests supreme comfort and anticipatory service. With contemporary decor and museum quality Asian art pieces, the hotel is a private and exclusive haven for business and leisure travelers.
+    </p>
+    <h2>Hotel B</h2>
+    <p class='indent'>
+      Hotel B is Singapore’s distinguished heritage hotel. Housed in a uniquely designed building dating back to 1900, our 5-star hotel is an endearing pioneer of the Singapore tourism industry. Much of her original beauty has been faithfully restored, with the Grand Tower gazetted a national monument in 1989.
+    </p>
+  </section>
 </div>
-<div class="section">
-  <div class="awesome content">
-    <h1 class="awesome title">
-      android
-    </h1>
-    <h3 class="incredible subtitle">join as employee</h3>
-    <br />
-    <button class="hilarious button">KNOW MORE</button>
-  </div>
+<div class='separator' style='background-image: url(http://eventjoiner.io/img/singapore-sunset.jpg)'></div>
+<div class='container'>
+  <section class='two'>
+    <a name="event"></a>
+    <h1>UPCOMING EVENT SCHEDULE</h1>
+    <table border='0' class='schedule'>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, June 14th 2016</td>
+        <td>
+          <a href='#'>
+            IT Technologies Dev Ops
+          </a>
+        </td>
+        <td>Hotel A</td>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, July 12th 2016</td>
+        <td>
+          <a href='#'>
+            Wedding Event
+          </a>
+        </td>
+        <td>Hotel B</td>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, August 2nd 2016</td>
+        <td>
+          <a href='#'>
+            Singapore 51 Aniversary event
+          </a>
+        </td>
+        <td>Hotel A</td>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, August 23rd 2016</td>
+        <td>
+          <a href='#'>
+            Japanese E-commerce institute party
+          </a>
+        </td>
+        <td>Hotel B</td>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, September 6th 2016</td>
+        <td>
+          <a href='#'>
+            Global Economy Promotion Event
+          </a>
+        </td>
+        <td>Hotel A</td>
+      </tr>
+      <tr>
+        <td class='date'>Saturday, September 27th 2016</td>
+        <td>
+          <a href='#'>
+            Automobile event
+          </a>
+        </td>
+        <td>Hotel A</td>
+      </tr>
+    </table>
+  </section>
 </div>
+<div class='separator' style='background-image: url(http://eventjoiner.io/img/singapore-sunset.jpg)'></div>
+<footer></footer>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://alvarotrigo.com/pagePiling/jquery.pagepiling.min.js'></script>
-<script src='http://rawgit.com/motyar/firefly/master/jquery.firefly-0.5.js'></script>
-        <script src="js/index.js"></script>
+
+    
+    
+    
+    
   </body>
 </html>
+

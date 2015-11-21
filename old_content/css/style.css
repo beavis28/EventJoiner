@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #f7f7f7;
+}
+.u-color-white {
+  color: #fff;
+}
+.awesome.content {
+  text-align: center;
+}
+.awesome.title,
+.incredible.subtitle {
+  font-size: 3.5em;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+.incredible.subtitle {
+  margin: 0;
+  font-size: 1.4em;
+  letter-spacing: 0.2em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+.hilarious.button {
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+  box-shadow: inset 0 0 0 0 #222;
+}
+.hilarious.button:hover {
+  box-shadow: inset 0 100px 0 0 #222;
+  color: #fff;
+}
+.hilarious.button.u-color-white {
+  color: #fff;
+  box-shadow: inset 0 0 0 0 #fff;
+}
+.hilarious.button.u-color-white:hover {
+  box-shadow: inset 0 100px 0 0 #fff;
+  color: #333;
+}
