@@ -5,7 +5,7 @@ function getCalendarByRange($id){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "select * from `jqcalendar` where `id` = " . $id;
+    $sql = "select * from `event` where `id` = " . $id;
     $handle = mysql_query($sql);
     //echo $sql;
     $row = mysql_fetch_object($handle);

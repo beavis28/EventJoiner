@@ -1,6 +1,6 @@
 ﻿SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
-CREATE TABLE `jqcalendar` (
+CREATE TABLE `event` (
   `Id` int(11) NOT NULL auto_increment,
   `Subject` varchar(1000) character set utf8 default NULL,
   `Location` varchar(200) character set utf8 default NULL,

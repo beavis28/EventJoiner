@@ -7,7 +7,7 @@ function addCalendar($st, $et, $sub, $ade){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "insert into `jqcalendar` (`subject`, `starttime`, `endtime`, `isalldayevent`) values ('"
+    $sql = "insert into `event` (`subject`, `starttime`, `endtime`, `isalldayevent`) values ('"
       .mysql_real_escape_string($sub)."', '"
       .php2MySqlTime(js2PhpTime($st))."', '"
       .php2MySqlTime(js2PhpTime($et))."', '"
@@ -34,7 +34,7 @@ function addDetailedCalendar($st, $et, $sub, $ade, $dscr, $loc, $color, $tz){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "insert into `jqcalendar` (`subject`, `starttime`, `endtime`, `isalldayevent`, `description`, `location`, `color`) values ('"
+    $sql = "insert into `event` (`subject`, `starttime`, `endtime`, `isalldayevent`, `description`, `location`, `color`) values ('"
       .mysql_real_escape_string($sub)."', '"
       .php2MySqlTime(js2PhpTime($st))."', '"
       .php2MySqlTime(js2PhpTime($et))."', '"
@@ -68,7 +68,7 @@ function listCalendarByRange($sd, $ed){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "select * from `jqcalendar` where `starttime` between '"
+    $sql = "select * from `event` where `starttime` between '"
       .php2MySqlTime($sd)."' and '". php2MySqlTime($ed)."' ORDER BY starttime ASC";
     $handle = mysql_query($sql);
     //echo $sql;
@@ -129,7 +129,7 @@ function updateCalendar($id, $st, $et){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "update `jqcalendar` set"
+    $sql = "update `event` set"
       . " `starttime`='" . php2MySqlTime(js2PhpTime($st)) . "', "
       . " `endtime`='" . php2MySqlTime(js2PhpTime($et)) . "' "
       . "where `id`=" . $id;
@@ -153,7 +153,7 @@ function updateDetailedCalendar($id, $st, $et, $sub, $ade, $dscr, $loc, $color, 
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "update `jqcalendar` set"
+    $sql = "update `event` set"
       . " `starttime`='" . php2MySqlTime(js2PhpTime($st)) . "', "
       . " `endtime`='" . php2MySqlTime(js2PhpTime($et)) . "', "
       . " `subject`='" . mysql_real_escape_string($sub) . "', "
@@ -182,7 +182,7 @@ function removeCalendar($id){
   try{
     $db = new DBConnection();
     $db->getConnection();
-    $sql = "delete from `jqcalendar` where `id`=" . $id;
+    $sql = "delete from `event` where `id`=" . $id;
 		if(mysql_query($sql)==false){
       $ret['IsSuccess'] = false;
       $ret['Msg'] = mysql_error();
