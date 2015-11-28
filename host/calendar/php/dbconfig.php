@@ -5,7 +5,7 @@ class DBConnection{
 		mysql_connect("localhost","eventjoiner","Eventjoiner123") or
          die("Could not connect: " . mysql_error());
     //change to your database name
-		mysql_select_db("event") or
+		mysql_select_db("eventjoiner") or
 		     die("Could not select database: " . mysql_error());
 	}
 }
